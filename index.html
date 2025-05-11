@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel OBS Remoto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Controle Remoto OBS</h1>
+  <div class="container">
+    <!-- Painel de cenas (preenchido dinamicamente) -->
+    <div class="panel">
+      <h2>Cenas</h2>
+      <div id="scene-buttons"></div>
+    </div>
+
+    <!-- Painel de transições e elementos -->
+    <div class="panel">
+      <h2>Transições & Elementos</h2>
+      <button onclick="setTransition('Cut')">Transição Rápida (Cut)</button>
+      <button onclick="setTransition('Fade')">Transição Suave (Fade)</button>
+      <button onclick="toggleSource('Camera')">Ocultar/Mostrar Câmera</button>
+      <button onclick="toggleSource('Texto')">Ocultar/Mostrar Texto</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
